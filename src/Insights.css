@@ -1,0 +1,115 @@
+/* ---------- Utilidades ---------- */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* ---------- Etiqueta de precio en tarjetas ---------- */
+.deal-label{position:absolute;bottom:12px;right:12px;font-size:10px;font-weight:700;letter-spacing:.3px;padding:4px 9px;border-radius:5px;pointer-events:auto;cursor:help}
+.deal-label.good{background:#e3efd6;color:#2f5a2a;box-shadow:0 1px 0 #2f5a2a22}
+.deal-label.high{background:#f6ece0;color:#8a5a2b}
+
+/* ---------- Detalle: acciones y galería ---------- */
+.detail-actions{display:flex;gap:10px;flex-wrap:wrap}
+.detail-gallery{position:relative}
+.gallery-nav{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;background:#ffffffe6;color:#234f3c;font-size:26px;line-height:1;display:grid;place-items:center;box-shadow:0 4px 14px #13312226;opacity:0;transition:opacity .2s}
+.detail-gallery:hover .gallery-nav,.gallery-nav:focus-visible{opacity:1}
+.gallery-nav.prev{left:14px}.gallery-nav.next{right:14px}
+.gallery-count{position:absolute;right:14px;bottom:14px;background:#213b32c4;color:#fff;font-size:11px;padding:4px 10px;border-radius:20px}
+@media (hover:none){.gallery-nav{opacity:1}}
+
+/* ---------- Precio por m² ---------- */
+.insight-card{background:#f6f8f1;border:1px solid #e3e9dc;border-radius:12px;padding:16px 16px 14px;margin:6px 0 18px}
+.insight-row{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap}
+.insight-label{display:block;font-size:11px;color:#6d7e6a;margin-bottom:2px}
+.insight-row strong{font-family:'Manrope',Arial,sans-serif;font-size:20px;letter-spacing:-.5px;color:#243d34}
+.insight-row strong small{font-size:11px}
+.insight-chip{font-size:11px;font-weight:600;padding:4px 10px;border-radius:20px;background:#eceee6;color:#5c6a5b;white-space:nowrap}
+.insight-chip.good{background:#dfeed2;color:#2f5a2a}
+.insight-chip.high{background:#f5e9db;color:#8a5a2b}
+.insight-scale{position:relative;height:8px;border-radius:8px;margin:16px 0 6px;background:linear-gradient(90deg,#9cc08a,#e7ead9 50%,#e2b98d)}
+.insight-median{position:absolute;left:50%;top:-3px;bottom:-3px;width:2px;background:#7c877f;border-radius:2px}
+.insight-marker{position:absolute;top:50%;width:16px;height:16px;border-radius:50%;background:#28583f;border:3px solid #fff;box-shadow:0 1px 4px #13312240;transform:translate(-50%,-50%);transition:left .3s}
+.insight-scale-labels{display:flex;justify-content:space-between;font-size:10px;color:#87917f}
+.insight-note{font-size:11px!important;line-height:1.6;color:#7c877f;margin:10px 0 0}
+
+/* ---------- Calculadora ---------- */
+.calculator{border:1px solid #e0e6d9;border-radius:12px;padding:0 16px;margin-bottom:20px;background:#fff}
+.calculator summary{cursor:pointer;list-style:none;padding:14px 0;font-weight:600;font-size:14px;display:flex;justify-content:space-between;align-items:center}
+.calculator summary::-webkit-details-marker{display:none}
+.calculator summary:after{content:'+';font-size:20px;color:#6c8759;transition:transform .2s}
+.calculator[open] summary:after{transform:rotate(45deg)}
+.calculator[open]{padding-bottom:16px}
+.calc-slider{gap:6px;margin-bottom:14px;font-weight:500}
+.calc-slider>span{display:flex;justify-content:space-between;font-size:12px;color:#5f6e60}
+.calc-slider b{color:#243d34;font-weight:600}
+.calc-slider input[type=range]{padding:0;border:0;accent-color:#28583f;background:transparent}
+.calc-result{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.calc-result>div{background:#edf2e7;border-radius:10px;padding:12px}
+.calc-result span{display:block;font-size:11px;color:#6d7e6a}
+.calc-result strong{display:block;font-family:'Manrope',Arial,sans-serif;font-size:19px;letter-spacing:-.4px;margin:2px 0}
+.calc-result small{font-size:10px}
+
+/* ---------- Comparador ---------- */
+.compare{margin:30px 0 10px;padding:26px;background:#fff;border:1px solid #e1e7dc;border-radius:16px}
+.compare-heading h2{font-size:22px;margin-bottom:4px}
+.compare-heading p{font-size:13px;margin-bottom:16px}
+.compare-picker{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.compare-picker button{display:flex;align-items:center;gap:8px;padding:5px 12px 5px 5px;border:1px solid #dce4d6;border-radius:30px;font-size:12px;background:#fff;max-width:260px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.compare-picker img{width:28px;height:28px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.compare-picker button.selected{background:#28583f;color:#fff;border-color:#28583f}
+.compare-scroll{overflow-x:auto}
+.compare-table{width:100%;border-collapse:collapse;min-width:520px;font-size:13px}
+.compare-table th,.compare-table td{padding:12px 10px;text-align:left;border-bottom:1px solid #edf0e8;vertical-align:top}
+.compare-table thead th{border-bottom:0;width:28%}
+.compare-table thead th:first-child{width:16%}
+.compare-table thead button{display:flex;flex-direction:column;gap:6px;text-align:left;padding:0;width:100%}
+.compare-table thead img{width:100%;height:110px;object-fit:cover;border-radius:10px}
+.compare-table thead span{font-family:'Manrope',Arial,sans-serif;font-weight:700;font-size:14px;line-height:1.3}
+.compare-table thead button:hover span{text-decoration:underline}
+.compare-table tbody th{font-weight:500;color:#6d7e6a;font-size:12px}
+.compare-table td.best{color:#2f5a2a;font-weight:700}
+.compare-table td.best:after{content:' ★';color:#b99550;font-size:11px}
+
+/* ---------- Búsquedas guardadas ---------- */
+.saved-searches ul{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-direction:column;gap:8px;width:100%}
+.saved-searches li{display:flex;align-items:stretch;border:1px solid #e1e7dc;border-radius:10px;background:#fff;overflow:hidden}
+.saved-search-open{flex:1;display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;text-align:left;padding:10px 12px;font-size:13px}
+.saved-search-open>span{font-weight:600;flex:1 1 100%;color:#243d34}
+.saved-search-open small{font-size:11px}
+.saved-search-open em{font-style:normal;font-size:10px;font-weight:700;background:#28583f;color:#fff;padding:2px 8px;border-radius:20px}
+.saved-search-open:hover{background:#f4f7ef}
+.saved-search-delete{padding:0 14px;font-size:18px;color:#9b4239;border-left:1px solid #edf0e8}
+.saved-search-delete:hover{background:#fff2ef}
+
+@media (max-width:760px){
+  .detail-actions .secondary{padding:10px;font-size:0;min-width:42px}
+  .compare{padding:18px}
+  .calc-result{grid-template-columns:1fr}
+}
+
+/* En la lista junto al mapa la foto es angosta: la etiqueta de precio va encima de «Ejemplo». */
+.casafast-results-scroll .deal-label{right:auto;left:9px;bottom:36px;z-index:2}
+
+/* Burbujas del mapa que agrupan varias propiedades */
+.casafast-cluster-icon{background:none;border:0}
+.casafast-cluster{display:grid;place-items:center;border-radius:50%;background:#285a42;color:#fff;font:700 13px/1 'DM Sans',Arial,sans-serif;border:3px solid #fff;box-shadow:0 0 0 5px #285a4233,0 3px 10px #13312240;cursor:pointer;transition:transform .15s}
+.casafast-cluster:hover{transform:scale(1.08)}
+
+/* Corazón de favoritos: se rellena al guardar, con un pequeño latido */
+.favorite.saved svg,.favorite-toggle.saved svg{fill:#b55148;stroke:#b55148}
+.favorite.saved,.favorite-toggle.saved svg{animation:heart-pop .35s ease}
+.favorite-toggle.saved{border-color:#e9c9c3;background:#fff7f5;color:#9b4239}
+@keyframes heart-pop{0%{transform:scale(1)}40%{transform:scale(1.28)}100%{transform:scale(1)}}
+@media (prefers-reduced-motion:reduce){.favorite.saved,.favorite-toggle.saved svg{animation:none}}
+
+/* Visitas en anuncios de ejemplo y agenda abierta */
+.demo-visit-note{font-size:12px!important;background:#f4f6ed;border-radius:8px;padding:10px 12px;margin-bottom:12px}
+.visit-open-note{font-size:12px;color:#355b30;background:#eaf2e5;border-radius:8px;padding:9px 12px;margin:0 0 12px}
+
+/* «Mostrar más» en Mis publicaciones */
+.listing-more{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:6px 4px 20px;font-size:13px;color:#748078}
+.visit-vacation-note{font-size:12px;color:#8a5a2b;background:#fbf1e3;border-radius:8px;padding:9px 12px;margin:0 0 12px}
+.visit-notice-error{display:block;font-size:12px;color:#9b4239;background:#fff2ef;border-radius:6px;padding:6px 9px;margin:4px 0 6px;line-height:1.5}
+.banner.owner-review{margin:0 0 18px;background:#fbf1e3;color:#8a5a2b}
+
+/* Folios de citas y publicaciones */
+.folio{display:inline-block;margin-top:6px;font:600 11px/1 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.4px;color:#4f6352;background:#eef2e8;border:1px solid #dfe7d9;border-radius:6px;padding:5px 8px;user-select:all}
+.sp-code{font:600 10px ui-monospace,SFMono-Regular,Consolas,monospace!important;color:#7a8a7c!important;letter-spacing:.3px}

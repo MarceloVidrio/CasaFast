@@ -1,0 +1,56 @@
+/* ===== Explora México y precios de referencia ===== */
+.ex-cities,.ex-market{background:#fff;border:1px solid #e3e9e1;border-radius:22px;padding:30px;margin-bottom:20px}
+.ex-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:20px}
+.ex-eyebrow{display:block;font-size:10px;font-weight:700;letter-spacing:2px;color:#7c8a6e;margin-bottom:6px}
+.ex-head h2{font-size:28px;letter-spacing:-1px;margin:0 0 6px}
+.ex-head p{font-size:13px;margin:0;max-width:640px}
+.ex-note{font-size:11px!important;color:#8b9485;margin:14px 0 0}
+
+.ex-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.ex-city{display:flex;flex-direction:column;text-align:left;padding:0;border:1px solid #e3e9e1;border-radius:16px;overflow:hidden;background:#fff;transition:transform .18s,box-shadow .18s,border-color .18s}
+.ex-city:hover{transform:translateY(-3px);box-shadow:0 12px 26px #1f3f2c1a;border-color:#cbd9c6}
+.ex-city:focus-visible{outline:3px solid #8fb39a;outline-offset:2px}
+.ex-photo{position:relative;display:block;height:118px;background:#dfe8da center/cover no-repeat}
+.ex-photo:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,#0f241a99)}
+.ex-count{position:absolute;left:10px;bottom:9px;z-index:1;font-size:11px;font-weight:700;color:#fff;background:#ffffff26;backdrop-filter:blur(4px);border:1px solid #ffffff40;padding:3px 9px;border-radius:20px}
+.ex-body{display:flex;flex-direction:column;padding:13px 14px 14px}
+.ex-body strong{font:700 17px 'Manrope',Arial,sans-serif;color:#1f3a2c;letter-spacing:-.3px}
+.ex-body small{font-size:12px;color:#7c877f;margin-bottom:10px}
+.ex-prices{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:10px}
+.ex-prices>span{display:flex;flex-direction:column;background:#f4f7f1;border-radius:9px;padding:7px 9px;font-size:13px;font-weight:700;color:#2c4a38;position:relative}
+.ex-prices em{font-style:normal;font-size:10px;font-weight:600;letter-spacing:.6px;text-transform:uppercase;color:#8b9485}
+.ex-prices i{position:absolute;top:6px;right:8px;font-style:normal;font-size:10px;font-weight:600;color:#9aa49c}
+.ex-go{font-size:12px;font-weight:600;color:#28583f}
+.ex-city:hover .ex-go{text-decoration:underline}
+
+.ex-market-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ex-market-card{border:1px solid #e3e9e1;border-radius:16px;padding:20px;background:linear-gradient(160deg,#f7faf4,#fff 60%)}
+.ex-market-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.ex-market-top span{font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#5f7a62}
+.ex-market-top small{font-size:12px;color:#8b9485}
+.ex-market-card>strong{display:block;font:700 32px 'Manrope',Arial,sans-serif;letter-spacing:-1.2px;color:#1f3a2c}
+.ex-market-card>strong small{font-size:14px;font-weight:600;color:#6d7e6a;letter-spacing:0}
+.ex-sub{display:block;font-size:12px;color:#7c877f;margin:4px 0 14px}
+.ex-cheapest{display:grid;grid-template-columns:1fr auto;gap:2px 10px;width:100%;text-align:left;padding:11px 13px;border-radius:11px;border:1px dashed #cfdccb;background:#fff}
+.ex-cheapest:hover{border-style:solid;background:#f7faf4}
+.ex-cheapest span{grid-column:1/-1;font-size:10px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:#8b9485}
+.ex-cheapest b{font-size:13px;color:#243d34;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ex-cheapest em{font-style:normal;font-size:13px;font-weight:700;color:#28583f;white-space:nowrap}
+
+@media (max-width:1000px){.ex-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){
+  .ex-cities,.ex-market{padding:20px 16px;border-radius:18px}
+  .ex-head h2{font-size:23px}
+  .ex-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .ex-photo{height:92px}
+  .ex-prices{grid-template-columns:1fr}
+  .ex-market-grid{grid-template-columns:1fr}
+}
+
+.ex-search{flex-direction:row;align-items:center;gap:8px;border:1px solid #dce4d8;border-radius:12px;padding:0 14px;background:#fafcf8;color:#7c877f;min-width:280px;font-weight:400}
+.ex-search span{font-size:18px}
+.ex-search input{border:0;background:transparent;padding:11px 0;font-size:14px}
+.ex-search input:focus{outline:none}
+.ex-search:focus-within{border-color:#679a80;box-shadow:0 0 0 3px #679a8022}
+.ex-empty{font-size:13px;color:#7c877f;padding:18px 0}
+@media (max-width:760px){.ex-head{flex-direction:column;align-items:stretch}.ex-search{min-width:0}}

@@ -1,0 +1,81 @@
+.visit-booking {display:grid;gap:16px;margin-top:28px}.visit-booking h3{margin:0}.visit-help,.visit-booking small{font-size:13px;line-height:1.6;color:#617268}.slot-picker{display:grid;gap:12px}.slot-picker label,.visit-booking>label{display:grid;gap:8px}.slot-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(95px,1fr));gap:8px}.slot-choice{border:1px solid #cad8cd;background:#fff;color:#284f3c;border-radius:10px;padding:12px;cursor:pointer}.slot-choice.selected{background:#28553e;color:white;border-color:#28553e}.slot-choice:focus-visible{outline:3px solid #8aa66c;outline-offset:3px}.visit-empty,.visit-summary{background:#f0f4e9;border-radius:12px;padding:18px;line-height:1.6}.visit-summary p{margin:8px 0}.visit-consent{display:flex!important;align-items:flex-start;gap:12px;font-size:13px;line-height:1.6}.visit-consent input{width:18px!important;height:18px!important;flex-shrink:0;margin-top:4px}.availability-list>div{display:flex;gap:16px;justify-content:space-between;padding:15px;border-bottom:1px solid #dce4d9;align-items:center}.visit-card{border:1px solid #dce4d9;border-radius:18px;padding:26px;background:white;margin:18px 0}.visit-card-head{display:flex;justify-content:space-between;align-items:center;gap:12px}.visit-card h3{font-size:23px;margin:18px 0 10px}.visit-card p{line-height:1.6}.visit-card small{color:#617268}.visit-actions{flex-wrap:wrap;margin:20px 0;gap:10px}.visit-location{background:#f6f8f1;border-radius:12px;padding:18px;margin:18px 0;overflow-wrap:anywhere}.visit-location a{color:#28553e;text-decoration:underline;display:block;margin-bottom:12px}.visit-notices{border-top:1px solid #e4e9df;padding:14px 0;font-size:13px}.visit-notices summary{cursor:pointer;font-weight:600}.visit-reschedule{padding:20px;border:1px solid #cbd6c3;border-radius:12px;margin-top:20px}.visit-reschedule h4{font-size:20px;margin-top:0}.status.Propuesta{background:#fff0d3;color:#7b5312}.status.Vencida{background:#eee;color:#555}.visits-page>p{line-height:1.7}@media(max-width:650px){.visit-card{padding:18px}.visit-card-head,.availability-list>div{align-items:flex-start;flex-direction:column}.visit-actions>button{width:100%}.visit-reschedule{padding:12px}.slot-grid{grid-template-columns:repeat(2,1fr)}}
+.visit-card{padding:28px 30px;border-color:#e0e6de;border-radius:20px;box-shadow:0 3px 15px #243e2e03}
+.visit-card-head{align-items:flex-start;gap:24px;padding-bottom:24px;border-bottom:1px solid #edf0e9}
+.visit-property-heading{display:flex;align-items:center;gap:18px;min-width:0}
+.visit-property-photo,.visit-photo-placeholder{width:112px;height:86px;object-fit:cover;border-radius:12px;flex-shrink:0;background:#f0f4eb}
+.visit-photo-placeholder{display:grid;place-items:center;font-size:34px;color:#5f7867}
+.visit-overline{display:block;font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:#728074;line-height:1.6}
+.visit-property-heading h3{margin:5px 0 4px;font-size:23px;letter-spacing:-.6px;line-height:1.25}
+.visit-card .visit-neighborhood{margin:0;color:#738075;font-size:13px}
+.visit-state{display:inline-flex;align-items:center;gap:7px;white-space:nowrap;border-radius:30px;padding:8px 11px;background:#f1f3ee;color:#5b685c;font-size:12px;font-weight:600}
+.visit-state>span{height:6px;width:6px;border-radius:50%;background:currentColor;flex-shrink:0}
+.visit-state.Pendiente,.visit-state.Propuesta{background:#fff5df;color:#8b601a}
+.visit-state.Aceptada{background:#eaf3e7;color:#315b3d}
+.visit-state.Rechazada,.visit-state.Cancelada{background:#f7eeeb;color:#8b5b4b}
+.visit-overview{display:grid;grid-template-columns:minmax(270px,.85fr) minmax(0,1.15fr);gap:30px;padding:25px 0}
+.visit-date-block{display:flex;gap:13px;align-items:flex-start}
+.visit-date-block>svg{margin-top:4px;color:#41664e;flex-shrink:0}
+.visit-card .visit-day{font-size:17px;font-weight:600;color:#273e30;margin:6px 0 2px;line-height:1.4;text-transform:capitalize}
+.visit-card .visit-hour{font-size:23px;color:#273e30;letter-spacing:-.5px;font-weight:600;margin:2px 0 4px}
+.visit-hour span{font-size:13px;color:#728074;letter-spacing:0;font-weight:400}
+.visit-date-block small{font-size:12px}
+.visit-buyer-message{padding:17px 20px;background:#f7f8f4;border-radius:12px;align-self:start;overflow-wrap:anywhere}
+.visit-card .visit-buyer-message p{margin:8px 0 0;font-size:14px;color:#4a5d4e;white-space:pre-wrap}
+.visit-pending-note{display:flex;align-items:flex-start;gap:10px;padding:14px 16px;background:#fffbf1;border:1px solid #f3ead3;border-radius:10px;font-size:13px;color:#6e5a33}
+.visit-note-dot{height:6px;width:6px;background:#b78a37;border-radius:50%;flex-shrink:0;margin-top:7px}
+.visit-pending-note strong{font-weight:500}
+.visit-card .visit-pending-note p{margin:3px 0 0;font-size:12px;color:#7a6b50;line-height:1.65}
+.visit-actions{margin:20px 0;align-items:center}
+.visit-actions .secondary{padding:11px 18px;font-size:13px;border-radius:9px}
+.visit-actions .text-button{font-size:13px;color:#7c6b63}
+.visit-card-footer{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:6px;border-top:1px solid #edf0e9}
+.visit-card .visit-notices{border:0;padding:0;font-size:12px;min-width:0}
+.visit-notices summary{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:17px 0;list-style:none;font-size:12px;font-weight:500;color:#536658;border-radius:4px}
+.visit-notices summary::-webkit-details-marker{display:none}
+.visit-notices summary>span{font-size:16px;transition:transform .15s}
+.visit-notices[open] summary>span{transform:rotate(45deg)}
+.visit-notices summary:focus-visible{outline:2px solid #6d8d72;outline-offset:4px}
+.visit-notice-list{padding-bottom:12px;display:grid;gap:14px}
+.visit-notice-item{display:flex;gap:12px;align-items:flex-start}
+.visit-channel{display:inline-block;background:#f0f4ed;color:#4b6351;border-radius:5px;padding:4px 7px;font-size:10px;min-width:54px;text-align:center}
+.visit-notice-event{display:block;font-size:12px;color:#4a604e;font-weight:500}
+.visit-card .visit-notice-item p{font-size:12px;color:#778175;margin:3px 0 0}
+.visit-timeline{list-style:none;padding:0 0 10px 7px;margin:0}
+.visit-timeline li{position:relative;border-left:1px solid #dbe4d8;padding:0 0 19px 17px}
+.visit-timeline li:last-child{padding-bottom:0;border-color:transparent}
+.visit-timeline li:before{content:'';position:absolute;left:-4px;top:4px;width:7px;height:7px;border-radius:50%;background:#7e9b76;box-shadow:0 0 0 3px white}
+.visit-timeline strong{display:block;font-size:12px;font-weight:500;color:#4a604e}
+.visit-timeline time{display:block;font-size:11px;color:#7d887b;margin-top:4px}
+.visit-timeline p{font-size:12px;margin:5px 0 0}
+@media(max-width:700px){.visit-card{padding:20px}.visit-card-head{flex-direction:column;gap:15px;padding-bottom:20px}.visit-property-photo,.visit-photo-placeholder{width:82px;height:78px}.visit-property-heading{gap:13px}.visit-property-heading h3{font-size:20px}.visit-state{font-size:11px;padding:7px 10px}.visit-overview{grid-template-columns:1fr;gap:18px;padding:20px 0}.visit-card-footer{grid-template-columns:1fr;gap:0}.visit-card .visit-notices+.visit-notices{border-top:1px solid #edf0e9}.visit-actions{gap:8px}.visit-actions .text-button{padding:10px}.visit-card .visit-day{font-size:16px}}
+
+
+/* Aviso de la regla de 12 horas (comprador) */
+.visit-policy{display:flex;gap:14px;align-items:flex-start;background:#f3f7ef;border:1px solid #dfe8d9;border-radius:14px;padding:16px 18px;margin:0 0 18px}
+.visit-policy-icon{flex-shrink:0;width:38px;height:38px;border-radius:11px;background:#fff;display:grid;place-items:center;font-size:19px;box-shadow:0 1px 2px #1f3f2c14}
+.visit-policy strong{display:block;font-size:14px;color:#24402f}
+.visit-policy p{margin:4px 0 0;font-size:13px;line-height:1.6;color:#617268}
+.visit-policy.closed{background:#fbf3e4;border-color:#f0dfbd}
+.visit-policy.closed strong{color:#7b5312}
+
+/* Después de la visita: asistencia y calificación */
+.after-visit{display:flex;gap:14px;align-items:flex-start;border:1px solid #e3e9de;background:#fbfcf9;border-radius:14px;padding:16px 18px;margin:0 0 18px}
+.after-visit-icon{flex-shrink:0;width:38px;height:38px;border-radius:11px;background:#fff;display:grid;place-items:center;font-size:19px;box-shadow:0 1px 2px #1f3f2c14}
+.after-visit strong{display:block;font-size:15px;color:#24402f}
+.after-visit p{margin:4px 0 0;font-size:13px;line-height:1.6;color:#617268}
+.after-visit-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.after-visit.done{align-items:center;background:#f3f7ef;font-size:14px}
+.after-visit.done p{margin:0}
+.after-visit.done.no_asistio{background:#fbf1ee}
+.after-visit.rating>div{display:grid;gap:10px;flex:1}
+.after-visit.rating textarea{font:inherit;padding:10px;border:1px solid #dfe6db;border-radius:10px;resize:vertical}
+.after-visit.rating .primary{justify-self:start}
+.rating-stars{display:flex;gap:4px}
+.rating-stars button{background:none;border:0;font-size:30px;line-height:1;color:#d8dccf;cursor:pointer;padding:0 2px;transition:transform .1s}
+.rating-stars button.on{color:#e3a73a}
+.rating-stars button:hover{transform:scale(1.12)}
+.rating-question{border:0;padding:0;margin:0;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.rating-question legend{float:left;font-size:13px;font-weight:600;color:#3d5446;margin-right:6px}
+.rating-question button{border:1px solid #d5dfd1;background:#fff;border-radius:20px;padding:5px 14px;font-size:13px;cursor:pointer}
+.rating-question button.selected{background:#28583f;border-color:#28583f;color:#fff}
+form.after-visit{display:flex!important;grid-template-columns:none}
