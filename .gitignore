@@ -1,0 +1,17 @@
+node_modules
+dist
+dist-ssr
+*.local
+*.log
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+
+# CasaFast: datos locales, base de datos, documentos y respaldos
+server/data/
+
+# Claves (contraseña de Gmail, Meta, Google)
+.env
+.env.*
+!.env.example
