@@ -1,0 +1,32 @@
+# Archivo creado en la instalación (modo de vista previa local). No compartas ese archivo ni lo subas a Git.
+# Reinicia npm.cmd run dev después de modificarlo.
+APP_URL=http://localhost:5173
+
+# disabled: no se crean cuentas hasta configurar el envío.
+# preview: solo desarrollo local; escribe el correo en server/data/mail-preview.
+# resend: envío real a través de Resend y un dominio verificado.
+EMAIL_MODE=preview
+EMAIL_FROM=CasaFast <cuentas@TU-DOMINIO>
+RESEND_API_KEY=
+
+# Clave del navegador: restringida a tus sitios web y Maps JavaScript API.
+GOOGLE_MAPS_BROWSER_KEY=
+# Clave privada del servidor: restringida a Geocoding API y la IP del servidor.
+GOOGLE_MAPS_SERVER_KEY=
+# DEMO_MAP_ID sirve para pruebas de desarrollo. Usa tu Map ID en producción.
+GOOGLE_MAPS_MAP_ID=DEMO_MAP_ID
+
+# Avisos de visitas por WhatsApp: disabled, preview (solo local), meta, twilio.
+# Nunca uses prefijo VITE_ para estas credenciales.
+WHATSAPP_MODE=preview
+TWILIO_ACCOUNT_SID=
+TWILIO_AUTH_TOKEN=
+TWILIO_WHATSAPP_FROM=
+TWILIO_VISIT_CONTENT_SID=
+
+# WhatsApp Cloud API directo con Meta. Requiere plantilla propia aprobada de seis variables.
+META_WHATSAPP_PHONE_NUMBER_ID=
+META_WHATSAPP_ACCESS_TOKEN=
+META_GRAPH_VERSION=v25.0
+META_WHATSAPP_TEMPLATE_NAME=casafast_visita
+META_WHATSAPP_TEMPLATE_LANGUAGE=es_MX
